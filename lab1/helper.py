@@ -1,8 +1,9 @@
 if __name__ == '__main__':
-    file = open('data_for_lab1.txt', 'r')
+    path = '/home/vlad/PycharmProjects/tpr_labs/lab1/data_for_lab3.txt'
+    file = open(path, 'r')
     lines = file.readlines()
     file.close()
-    file = open('data_for_lab1.txt', 'w')
+    file = open(path, 'w')
     print(lines)
     for line in lines:
         file.write(line[:(len(line) - 1)] + ' ')
